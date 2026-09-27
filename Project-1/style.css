@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 7px; }
 ::-webkit-scrollbar-track { background: var(--light-bg); }
 ::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
 
