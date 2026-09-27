@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worth Services Co., Ltd. — Premier Logistics Partner</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     TOP INFO BAR
+════════════════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="tel:+9595010001"><i class="bi bi-telephone-fill me-1"></i>+95 9 5010001</a>
+        <span class="text-white-25">|</span>
+        <a href="tel:+9595010002"><i class="bi bi-telephone-fill me-1"></i>+95 9 5010002</a>
+        <span class="text-white-25">|</span>
+        <a href="mailto:info@worthservicesmm.com"><i class="bi bi-envelope-fill me-1"></i>info@worthservicesmm.com</a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <a href="https://facebook.com" target="_blank" class="social-link"><i class="bi bi-facebook"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════════ -->
+<nav id="mainNav" class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">
+      Worth<span class="brand-accent">Services</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-intro">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Our Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#global">Global Reach</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        <li class="nav-item ms-lg-3">
+          <a href="#contact" class="btn btn-worth btn-sm">Get a Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-xl-7">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Established Since 2006 — Yangon, Myanmar
+        </div>
+        <h1 class="hero-title">
+          Welcome to<br>
+          <span class="highlight">Worth Services</span><br>
+          Co., Ltd.
+        </h1>
+        <p class="hero-desc">
+          Your Premier Logistics Partner for cross-border freight forwarding, customs clearance,
+          and end-to-end supply chain solutions across Southeast Asia and beyond.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#services" class="btn btn-worth btn-lg">
+            <i class="bi bi-grid-3x3-gap-fill me-2"></i>More Explore
+          </a>
+          <a href="#contact" class="btn btn-worth-outline btn-lg">
+            <i class="bi bi-telephone me-2"></i>Contact Us
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">18+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">50+</div>
+            <div class="hero-stat-label">Countries Served</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">8</div>
+            <div class="hero-stat-label">Core Services</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" onclick="document.getElementById('about-intro').scrollIntoView({behavior:'smooth'})">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     MARQUEE STRIP
+════════════════════════════════════════════════════════════ -->
+<div class="services-strip">
+  <div class="strip-track">
+    <!-- duplicated for seamless loop -->
+    <div class="strip-item"><i class="bi bi-water"></i> Ocean Freight</div>
+    <div class="strip-item"><i class="bi bi-airplane-fill"></i> Air Freight</div>
+    <div class="strip-item"><i class="bi bi-file-earmark-text-fill"></i> Clearance Services</div>
+    <div class="strip-item"><i class="bi bi-building-fill"></i> Warehousing</div>
+    <div class="strip-item"><i class="bi bi-box-seam-fill"></i> Project Cargo</div>
+    <div class="strip-item"><i class="bi bi-truck-front-fill"></i> Door-to-Door Delivery</div>
+    <div class="strip-item"><i class="bi bi-card-checklist"></i> MIC Application</div>
+    <div class="strip-item"><i class="bi bi-folder2-open"></i> Documentation Support</div>
+    <div class="strip-item"><i class="bi bi-water"></i> Ocean Freight</div>
+    <div class="strip-item"><i class="bi bi-airplane-fill"></i> Air Freight</div>
+    <div class="strip-item"><i class="bi bi-file-earmark-text-fill"></i> Clearance Services</div>
+    <div class="strip-item"><i class="bi bi-building-fill"></i> Warehousing</div>
+    <div class="strip-item"><i class="bi bi-box-seam-fill"></i> Project Cargo</div>
+    <div class="strip-item"><i class="bi bi-truck-front-fill"></i> Door-to-Door Delivery</div>
+    <div class="strip-item"><i class="bi bi-card-checklist"></i> MIC Application</div>
+    <div class="strip-item"><i class="bi bi-folder2-open"></i> Documentation Support</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ABOUT INTRO
+════════════════════════════════════════════════════════════ -->
+<section id="about-intro">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Image -->
+      <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+        <div class="about-intro-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=700&h=500&fit=crop&auto=format"
+            alt="Shipping container yard — Worth Services operations"
+          />
+          <div class="about-badge-overlay">
+            <div class="num">2006</div>
+            <div class="label">Est. Year</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">
+          A Trusted Leader in<br>
+          <span>Freight Forwarding</span>
+        </h2>
+        <div class="divider-bar"></div>
+        <p class="mb-3" style="color:var(--text-muted);line-height:1.8;font-size:.95rem;">
+          Worth Services Co., Ltd. was established in 2006 as a leading freight forwarding and
+          logistics company headquartered in Yangon, Myanmar. Our young and dynamic management
+          team brings decades of combined expertise in international trade and supply chain management.
+        </p>
+        <p class="mb-4" style="color:var(--text-muted);line-height:1.8;font-size:.95rem;">
+          We are dedicated to providing best-in-class services at the lowest possible cost —
+          connecting Myanmar businesses with global markets through reliable, transparent, and
+          innovative logistics solutions.
+        </p>
+
+        <ul class="check-list mb-4">
+          <li><i class="bi bi-check-circle-fill"></i> Cross-border freight forwarding specialists</li>
+          <li><i class="bi bi-check-circle-fill"></i> Customs clearance and MIC application experts</li>
+          <li><i class="bi bi-check-circle-fill"></i> Worldwide partner network across 50+ countries</li>
+          <li><i class="bi bi-check-circle-fill"></i> Door-to-door tracking and real-time visibility</li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+          <a href="#services" class="btn btn-worth">Our Services <i class="bi bi-arrow-right ms-2"></i></a>
+          <a href="#contact" class="btn btn-worth-outline">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tagline Banner -->
+    <div class="row mt-5">
+      <div class="col">
+        <div class="p-4 rounded-worth text-center"
+             style="background:linear-gradient(135deg,var(--navy),var(--navy-mid));border:1px solid rgba(46,168,224,.2);"
+             data-aos="zoom-in" data-aos-duration="600">
+          <p class="mb-0 fw-bold text-uppercase"
+             style="color:rgba(255,255,255,.9);letter-spacing:.1em;font-family:var(--font-head);font-size:clamp(.85rem,1.5vw,1.1rem);">
+            <i class="bi bi-star-fill text-gold me-2"></i>
+            We Are Dedicated to Provide the Best Services at the Lowest Possible Cost
+            <i class="bi bi-star-fill text-gold ms-2"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Our <span>Core Services</span></h2>
+      <div class="divider-bar center"></div>
+      <p class="mx-auto" style="max-width:560px;color:var(--text-muted);font-size:.95rem;line-height:1.75;">
+        From ocean freight to documentation support, we provide end-to-end logistics solutions
+        tailored to your business needs — with a commitment to responsiveness, transparency, and integrity.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- 1. Ocean Freight -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-water"></i></div>
+          <h5>Ocean Freight</h5>
+          <p>Cost-effective sea freight options for large volume cargo with full and less-than-container-load options.</p>
+        </div>
+      </div>
+
+      <!-- 2. Air Freight -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-airplane-fill"></i></div>
+          <h5>Air Freight</h5>
+          <p>Fast and reliable air cargo services for time-sensitive shipments to destinations worldwide.</p>
+        </div>
+      </div>
+
+      <!-- 3. Clearance Services -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-file-earmark-check-fill"></i></div>
+          <h5>Clearance Services</h5>
+          <p>Expert customs clearance handling to ensure smooth and compliant import and export procedures.</p>
+        </div>
+      </div>
+
+      <!-- 4. Warehousing -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-building-fill"></i></div>
+          <h5>Warehousing</h5>
+          <p>Secure and modern warehousing facilities with inventory management and order fulfillment services.</p>
+        </div>
+      </div>
+
+      <!-- 5. Project Cargo -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-box-seam-fill"></i></div>
+          <h5>Project Cargo</h5>
+          <p>Specialized handling of oversized, heavy, or complex project cargo requiring custom logistics planning.</p>
+        </div>
+      </div>
+
+      <!-- 6. Door-to-Door Delivery -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-truck-front-fill"></i></div>
+          <h5>Door-to-Door Delivery</h5>
+          <p>Complete end-to-end shipping from origin pickup to final destination delivery with real-time tracking.</p>
+        </div>
+      </div>
+
+      <!-- 7. MIC Application -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-card-checklist"></i></div>
+          <h5>MIC Application</h5>
+          <p>Permit and MIC (Ministry of Commerce) application assistance for smooth regulatory compliance in Myanmar.</p>
+        </div>
+      </div>
+
+      <!-- 8. Documentation Support -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="service-card">
+          <div class="service-icon-wrap"><i class="bi bi-folder2-open"></i></div>
+          <h5>Documentation Support</h5>
+          <p>Comprehensive paperwork assistance including bills of lading, certificates of origin, and customs declarations.</p>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     WHY CHOOSE US
+════════════════════════════════════════════════════════════ -->
+<section id="why">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Image -->
+      <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-duration="800">
+        <div class="why-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1606964212858-c215029db704?w=700&h=550&fit=crop&auto=format"
+            alt="Cargo containers — Worth Services"
+          />
+          <div class="why-overlay"></div>
+          <div class="why-caption">
+            <div class="big-num">18+</div>
+            <div style="color:rgba(255,255,255,.8);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-head);">
+              Years of Expertise
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="col-lg-7 order-lg-1" data-aos="fade-right" data-aos-duration="800">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">Trusted by Businesses<br><span>Across Myanmar</span></h2>
+        <div class="divider-bar"></div>
+
+        <div class="why-feature">
+          <div class="why-icon"><i class="bi bi-shield-check-fill"></i></div>
+          <div class="why-text">
+            <h6>Industry Compliance & Integrity</h6>
+            <p>Member of esteemed industry organizations, reflecting our commitment to best practices and ethical standards in freight forwarding.</p>
+          </div>
+        </div>
+
+        <div class="why-feature">
+          <div class="why-icon"><i class="bi bi-globe-asia-australia"></i></div>
+          <div class="why-text">
+            <h6>Worldwide Partner Network</h6>
+            <p>Strategic alliances with logistics partners in 50+ countries ensure seamless door-to-door delivery anywhere on the globe.</p>
+          </div>
+        </div>
+
+        <div class="why-feature">
+          <div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="why-text">
+            <h6>Transparent Pricing & Tracking</h6>
+            <p>We provide upfront cost estimates and real-time shipment visibility so you're never left guessing where your cargo is.</p>
+          </div>
+        </div>
+
+        <div class="why-feature">
+          <div class="why-icon"><i class="bi bi-people-fill"></i></div>
+          <div class="why-text">
+            <h6>Young & Dynamic Management Team</h6>
+            <p>Our experienced yet forward-thinking team brings agility and deep local expertise to every shipment challenge.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     GLOBAL REACH
+════════════════════════════════════════════════════════════ -->
+<section id="global">
+  <div class="container position-relative">
+
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Global Reach</span>
+      <h2 class="section-title">Connecting Myanmar to the <span style="color:var(--gold)">World</span></h2>
+      <div class="divider-bar center" style="background:linear-gradient(90deg,var(--gold),var(--sky));"></div>
+      <p class="mx-auto" style="max-width:540px;color:rgba(255,255,255,.65);font-size:.95rem;line-height:1.75;">
+        Through our worldwide partner networks and strategic alliances, we provide freight solutions
+        that reach every corner of the globe efficiently and reliably.
+      </p>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="reach-card">
+          <div class="stat-num" data-count="50">0</div><span class="stat-num" style="font-family:var(--font-head);font-size:2.6rem;font-weight:900;color:var(--gold);">+</span>
+          <div class="stat-label">Countries Covered</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="reach-card">
+          <div class="stat-num" data-count="500">0</div><span class="stat-num" style="font-family:var(--font-head);font-size:2.6rem;font-weight:900;color:var(--gold);">+</span>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="reach-card">
+          <div class="stat-num" data-count="18">0</div><span class="stat-num" style="font-family:var(--font-head);font-size:2.6rem;font-weight:900;color:var(--gold);">+</span>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="reach-card">
+          <div class="stat-num" data-count="8">0</div>
+          <div class="stat-label">Core Services</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- World Map visual -->
+    <div class="world-map-wrap" data-aos="fade-up" data-aos-delay="200">
+      <!-- Dots representing key locations -->
+      <div class="map-dot" style="top:30%;left:28%;"></div>
+      <div class="map-dot" style="top:40%;left:48%;animation-delay:.4s;background:var(--gold);box-shadow:0 0 0 4px rgba(245,166,35,.25);"></div>
+      <div class="map-dot" style="top:35%;left:55%;animation-delay:.8s;"></div>
+      <div class="map-dot" style="top:45%;left:70%;animation-delay:.2s;background:var(--gold);box-shadow:0 0 0 4px rgba(245,166,35,.25);"></div>
+      <div class="map-dot" style="top:38%;left:20%;animation-delay:1s;"></div>
+      <div class="map-dot" style="top:55%;left:35%;animation-delay:.6s;"></div>
+      <div class="map-dot" style="top:28%;left:62%;animation-delay:1.2s;"></div>
+
+      <!-- SVG World Map outline -->
+      <svg class="world-map-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.8">
+        <path d="M 80 120 L 180 80 L 240 100 L 260 160 L 230 200 L 200 220 L 160 210 L 130 180 Z"/>
+        <path d="M 130 180 L 160 210 L 180 260 L 160 280 L 140 260 L 120 230 Z"/>
+        <path d="M 180 270 L 220 260 L 240 300 L 250 350 L 230 400 L 200 420 L 180 400 L 170 360 L 175 310 Z"/>
+        <path d="M 420 80 L 480 60 L 520 80 L 530 110 L 500 130 L 460 130 L 430 115 Z"/>
+        <path d="M 460 130 L 500 130 L 520 150 L 510 170 L 480 175 L 455 160 Z"/>
+        <path d="M 430 180 L 490 170 L 520 200 L 530 260 L 520 320 L 490 370 L 460 380 L 440 340 L 430 280 L 425 220 Z"/>
+        <path d="M 540 60 L 700 40 L 820 70 L 860 100 L 800 120 L 720 110 L 640 100 L 570 90 Z"/>
+        <path d="M 520 150 L 580 140 L 610 170 L 600 200 L 560 210 L 530 190 Z"/>
+        <path d="M 590 180 L 640 170 L 660 200 L 650 240 L 630 270 L 600 260 L 585 230 Z"/>
+        <path d="M 660 190 L 710 180 L 740 210 L 750 250 L 730 280 L 700 290 L 670 270 L 655 230 Z"/>
+        <path d="M 700 110 L 780 100 L 820 130 L 830 170 L 790 190 L 750 180 L 710 160 L 700 140 Z"/>
+        <path d="M 840 130 L 870 120 L 880 150 L 860 170 L 840 160 Z"/>
+        <path d="M 850 170 L 870 160 L 885 180 L 870 200 L 850 190 Z"/>
+        <path d="M 750 320 L 840 300 L 880 330 L 890 380 L 860 420 L 800 430 L 760 400 L 740 360 Z"/>
+      </svg>
+
+      <!-- Route lines (animated) -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 1000 500">
+        <path d="M 485 200 Q 400 160 280 130" stroke="rgba(46,168,224,0.4)" stroke-width="1.5" fill="none" stroke-dasharray="6 4">
+          <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 485 200 Q 560 170 700 140" stroke="rgba(245,166,35,0.4)" stroke-width="1.5" fill="none" stroke-dasharray="6 4">
+          <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.8s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 485 200 Q 480 280 450 350" stroke="rgba(46,168,224,0.3)" stroke-width="1.5" fill="none" stroke-dasharray="6 4">
+          <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2s" repeatCount="indefinite"/>
+        </path>
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     MISSION & VISION
+════════════════════════════════════════════════════════════ -->
+<section id="mission">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Our Foundation</span>
+      <h2 class="section-title">Mission & <span>Vision</span></h2>
+      <div class="divider-bar center"></div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="700">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+          <h4>Our Mission</h4>
+          <p>
+            Empowering global business through sustainable, transparent, and cost-efficient logistics.
+            We strive to be the most reliable freight forwarding partner for Myanmar businesses by
+            delivering exceptional service, maintaining the highest standards of compliance, and
+            fostering long-term relationships built on trust and performance.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="700" data-aos-delay="100">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-eye-fill"></i></div>
+          <h4>Our Vision</h4>
+          <p>
+            Becoming a premier provider of innovative freight solutions that seamlessly connect
+            Myanmar to the global economy. We envision a future where logistics barriers dissolve,
+            enabling every Myanmar business — regardless of size — to compete and thrive in
+            international markets through our world-class supply chain solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Client Feedback</span>
+      <h2 class="section-title">What Our <span>Clients Say</span></h2>
+      <div class="divider-bar center"></div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p>Worth Services handled our import shipment from China with exceptional efficiency. Their customs clearance team resolved complications quickly and kept us informed every step of the way.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&auto=format" alt="Client" class="testi-avatar" />
+            <div>
+              <div class="testi-name">Ko Zaw Lin</div>
+              <div class="testi-role">CEO, Myanmar Trading Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p>Their ocean freight service reduced our shipping costs significantly while maintaining reliable delivery schedules. The documentation support team is incredibly thorough and professional.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=80&h=80&fit=crop&auto=format" alt="Client" class="testi-avatar" />
+            <div>
+              <div class="testi-name">Daw Aye Myint</div>
+              <div class="testi-role">Director, Yangon Exports Ltd.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p>We've relied on Worth Services for our MIC applications and project cargo for three years. Their expertise in Myanmar regulations is unmatched, and their pricing is always competitive.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&auto=format" alt="Client" class="testi-avatar" />
+            <div>
+              <div class="testi-name">U Tin Maung</div>
+              <div class="testi-role">Procurement Manager, Shwe Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════════════════════════ -->
+<section id="cta-banner">
+  <div class="container position-relative" style="z-index:2;">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8" data-aos="fade-right">
+        <h2 class="mb-3">Ready to Ship with Confidence?</h2>
+        <p class="mb-0">
+          Get in touch today and let our logistics experts design the perfect freight solution for your business.
+          Quick turnaround, competitive rates, and complete peace of mind.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+        <a href="#contact" class="btn btn-lg me-2"
+           style="background:#fff;color:var(--navy);font-family:var(--font-head);font-weight:700;border-radius:3px;padding:.75rem 2rem;transition:all .25s;"
+           onmouseover="this.style.background='var(--gold)';this.style.color='#fff';"
+           onmouseout="this.style.background='#fff';this.style.color='var(--navy)';">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <div class="divider-bar center"></div>
+      <p class="mx-auto" style="max-width:500px;color:var(--text-muted);font-size:.95rem;">
+        Have a shipment to plan? Our team is ready to help with a quote, answer questions, or walk you through our services.
+      </p>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">
+              <a href="tel:+9595010001">+95 9 5010001</a><br>
+              <a href="tel:+9595010002">+95 9 5010002</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <a href="mailto:info@worthservicesmm.com">info@worthservicesmm.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-value">Building C, 9th Floor, Room No. C-912,<br>Complex 45, 45th Street,<br>Botahtaung, Yangon, Myanmar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-lg-8">
+        <div class="p-4 p-md-5 rounded-worth" style="background:var(--white);border:1px solid var(--border);box-shadow:0 12px 48px rgba(11,37,69,.07);">
+          <h4 class="mb-4" style="color:var(--navy);font-size:1.3rem;">Send Us a Message</h4>
+          <form id="contactForm" onsubmit="handleForm(event)">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="fname" placeholder="Full Name" required />
+                  <label for="fname">Full Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="femail" placeholder="Email Address" required />
+                  <label for="femail">Email Address</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="tel" class="form-control" id="fphone" placeholder="Phone Number" />
+                  <label for="fphone">Phone Number</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <select class="form-select" id="fservice">
+                    <option value="">Select a service…</option>
+                    <option>Ocean Freight</option>
+                    <option>Air Freight</option>
+                    <option>Clearance Services</option>
+                    <option>Warehousing</option>
+                    <option>Project Cargo</option>
+                    <option>Door-to-Door Delivery</option>
+                    <option>MIC Application</option>
+                    <option>Documentation Support</option>
+                  </select>
+                  <label for="fservice">Service Interested In</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" id="fmessage" placeholder="Message" style="height:120px;" required></textarea>
+                  <label for="fmessage">Your Message</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-worth btn-lg w-100">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="formSuccess" class="alert alert-success mt-3 d-none">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            Thank you! Your message has been sent. Our team will respond within 24 hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Brand -->
+      <div class="col-lg-4">
+        <div class="footer-brand">Worth<span class="accent">Services</span></div>
+        <p class="footer-desc">
+          Worth Services Co., Ltd. — your trusted partner in freight forwarding and logistics
+          solutions since 2006. Connecting Myanmar businesses to the world.
+        </p>
+        <div class="footer-social mt-4">
+          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:info@worthservicesmm.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:+9595010001" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-heading">About</div>
+        <ul class="footer-links">
+          <li><a href="#about-intro"><i class="bi bi-chevron-right"></i>About Us</a></li>
+          <li><a href="#mission"><i class="bi bi-chevron-right"></i>Mission & Vision</a></li>
+          <li><a href="#global"><i class="bi bi-chevron-right"></i>Global Reach</a></li>
+          <li><a href="#testimonials"><i class="bi bi-chevron-right"></i>Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>Ocean Freight</a></li>
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>Air Freight</a></li>
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>Clearance Services</a></li>
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>Warehousing</a></li>
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>Door-to-Door</a></li>
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>MIC Application</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-4">
+        <div class="footer-heading">Contact Us</div>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>Building C, 9th Floor, Room No. C-912, Complex 45,<br>45th Street, Botahtaung, Yangon, Myanmar</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill"></i>
+          <span><a href="tel:+9595010001" style="color:rgba(255,255,255,.7);text-decoration:none;">+95 9 5010001</a><br>
+          <a href="tel:+9595010002" style="color:rgba(255,255,255,.7);text-decoration:none;">+95 9 5010002</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope-fill"></i>
+          <span><a href="mailto:info@worthservicesmm.com" style="color:rgba(255,255,255,.7);text-decoration:none;">info@worthservicesmm.com</a></span>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2024 Worth Services Co., Ltd. All rights reserved.</span>
+      <span>Powered by <span style="color:var(--sky)">Softnovations</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- ══════════════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+/* ── AOS init ─────────────────────────────────────────────── */
+AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic', offset: 60 });
+
+/* ── Navbar scroll behaviour ──────────────────────────────── */
+const nav = document.getElementById('mainNav');
+const btt = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  nav.classList.toggle('scrolled', y > 80);
+  btt.classList.toggle('show', y > 400);
+
+  /* active nav link highlighting */
+  document.querySelectorAll('section[id]').forEach(sec => {
+    const top = sec.offsetTop - 100;
+    const bottom = top + sec.offsetHeight;
+    const link = document.querySelector(`.nav-link[href="#${sec.id}"]`);
+    if (link) link.classList.toggle('active', y >= top && y < bottom);
+  });
+});
+
+/* ── Smooth anchor links ──────────────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      /* close mobile menu */
+      const bsCollapse = bootstrap.Collapse.getInstance(document.getElementById('navMenu'));
+      if (bsCollapse) bsCollapse.hide();
+    }
+  });
+});
+
+/* ── Counter animation ────────────────────────────────────── */
+const counters = document.querySelectorAll('[data-count]');
+const observed = new Set();
+
+const counterObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !observed.has(entry.target)) {
+      observed.add(entry.target);
+      const el = entry.target;
+      const target = +el.getAttribute('data-count');
+      const step = Math.ceil(target / 60);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current.toLocaleString();
+      }, 25);
+    }
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(c => counterObs.observe(c));
+
+/* ── Contact Form ─────────────────────────────────────────── */
+function handleForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending…';
+  setTimeout(() => {
+    btn.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i>Sent!';
+    document.getElementById('formSuccess').classList.remove('d-none');
+    e.target.reset();
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = '<i class="bi bi-send-fill me-2"></i>Send Message';
+      document.getElementById('formSuccess').classList.add('d-none');
+    }, 5000);
+  }, 1200);
+}
+</script>
+
+</body>
+</html>
